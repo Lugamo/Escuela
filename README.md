@@ -10,3 +10,6 @@ A TENER EN CUENTA: Al momento de agregar un nombre, la lista se actualiza siempr
                    Si se coloca un nombre y se minimiza el teclado, si se procede a dar clic en algun boton no se actualizara la 
                    lista hasta se de clic en el EditText lo cual hara emerger el teclado y por consiguiente se actualiza la lista
                    Desconozco a que se pueda deber este BUG.
+
+
+La clase Output es quien hace uso del patron Singleton
