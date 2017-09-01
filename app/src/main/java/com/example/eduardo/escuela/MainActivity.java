@@ -32,8 +32,9 @@ public class MainActivity extends Activity {
                 if(text != null && !text.isEmpty()){
                     EscuelaFactory escuelaFactory = new EscuelaFactory();
                     Escuela escuela = escuelaFactory.getEscuela("Maestro");
-                    Output.setOutput(text, escuela.rol(),escuela.pago());
-                    informacion.add(Output.getOutput());
+                    Output salida = Output.getUser();
+                    salida.setOutput(text, escuela.rol(),escuela.pago());
+                    informacion.add(salida.getOutput());
                     edit.setText("");
                 }else {
 
@@ -56,8 +57,9 @@ public class MainActivity extends Activity {
                 if(text != null && !text.isEmpty()){
                     EscuelaFactory escuelaFactory = new EscuelaFactory();
                     Escuela escuela = escuelaFactory.getEscuela("Alumno");
-                    Output.setOutput(text, escuela.rol(),escuela.pago());
-                    informacion.add(Output.getOutput());;
+                    Output salida = Output.getUser();
+                    salida.setOutput(text, escuela.rol(),escuela.pago());
+                    informacion.add(salida.getOutput());
                     edit.setText("");
                 }else {
 
@@ -80,8 +82,9 @@ public class MainActivity extends Activity {
                 if(text != null && !text.isEmpty()){
                     EscuelaFactory escuelaFactory = new EscuelaFactory();
                     Escuela escuela = escuelaFactory.getEscuela("Trabajador");
-                    Output.setOutput(text, escuela.rol(),escuela.pago());
-                    informacion.add(Output.getOutput());
+                    Output salida = Output.getUser();
+                    salida.setOutput(text, escuela.rol(),escuela.pago());
+                    informacion.add(salida.getOutput());
                     edit.setText("");
                 }else {
 
